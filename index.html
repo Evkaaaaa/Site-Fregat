@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="styles/gilroy.css">
+    <link rel="stylesheet" href="styles/book_antiqua.css">
+    <link rel="stylesheet" href="fonts_M/stylesheet.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <meta charset="UTF-8">
+    <title>Фрегат</title>
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div id="sidebar">
+        <div class="toogle-btn" onclick="openmenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Меню сайта</li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О нас</a></li>
+        </ul>
+    </div>
+
+    <!-- top-btn -->
+    <button id="top">Наверх</button>
+    <!-- header -->
+    <header class="header">
+        <div class="container1">
+            <div class="header_inner">
+                <div class="nav">
+                    <div class="nav__element">
+                        <a class="nav_link" href="#">Номера и цены</a>
+                        <img src="images/intro/Vector.svg" alt="">
+                    </div>
+
+                    <div class="nav__element">
+                        <a class="nav_link" href="#">Услуги</a>
+                        <img src="images/intro/Vector.svg" alt="">
+                    </div>
+
+                    <div class="nav__element">
+                        <a class="nav_link" href="#">О базе отдыха</a>
+                        <img src="images/intro/Vector.svg" alt="">
+                    </div>
+
+                    <a href="#" class="nav_link nav__element" onmouseover="showLinkImage('float_1')"
+                        onmouseout="hideLinkImage('float_1')">Отзывы</a>
+                    <div id="float_1" style="display: none; position: absolute;">
+                        <img src="images/intro/1.jpg" alt="Фото 1" />
+                    </div>
+
+                    <!-- <a class="nav_link nav__element" href="#">Отзывы</a> -->
+                    <a class="nav_link nav__element" href="#">Контакты</a>
+                </div>
+
+                <div class="header_logo">Фрегат</div>
+
+                <div class="phoness">
+                    <div class="phone1 nav__element">
+                        <img src="images/intro/phone.svg" alt="phone">
+                        8 (3952) 56-00-26
+                    </div>
+
+                    <div class="phone2 nav__element">
+                        <img src="images/intro/phone.svg" alt="phone">
+                        8 (3952) 56-00-26
+                    </div>
+
+                    <div class="media nav__element">
+                        <a href="#"><img class="media_img" src="images/intro/viber.svg" alt="viber"></a>
+                        <a href="#"><img class="media_img" src="images/intro/inst.svg" alt="inst"></a>
+                        <a href="#"><img class="media_img" src="images/intro/whatsapp.svg" alt="whatsapp"></a>
+                    </div>
+
+                    <div class="do_call nav__element">
+                        <a class="call" href="#">Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+        <div class="container1">
+            <div class="sliderr">
+                <div class="title">
+                    <div class="intro_title" id="printt">Байкал</div>
+
+                    <div class="suptitle">
+                        Отдых на берегу Малого моря озера
+                    </div>
+
+                    <form class="btn" name="changecolorbutton">
+                        <input type="button" name="but" value="Забронировать номер" onMouseOver="mouseIn()"
+                            onMouseOut="mouseOut()">
+                    </form>
+
+                </div>
+
+                <div class="slider_text">
+                    <div class="titlee">Отзывы отдыхающих</div>
+
+                    <div class="suptitlee">Не в первый раз отдыхаем на этой базе. Как всегда все великолепно: радушный
+                        прием, отличное питание, уютное пребывание и блогоустроенный пляж. Хотим отметить вечерние
+                        освещение базы и особенно пляжа, которое помогает впитывать энергетику Байкала.</div>
+                    <div class="person">Светлана Кулина</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Нижняя часть экрана-->
+    <div class="niz">
+        <div class="container1">
+            <div class="dark">
+                <div class="service1">
+                    <img class="services" src="images/intro/service1.jpg" alt="service1">
+                    <div class="stext">
+                        <span>Сауна на берегу</span>
+                        <div class="text2">Подробнее</div>
+                        <img src="images/intro/Arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+
+                <div class="service2">
+                    <img class="services" src="images/intro/service2.jpg" alt="service2">
+                    <div class="stext">
+                        <span>Скоростной катер</span>
+                        <div class="text2">Подробнее</div>
+                        <img src="images/intro/Arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+
+                <div class="service3">
+                    <img class="services" src="images/intro/service3.png" alt="service3">
+                    <div class="stext">
+                        <span>Ресторан с видом на Байкал</span>
+                        <div class="text2">Подробнее</div>
+                        <img src="images/intro/Arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+
+                <div class="service4">
+                    <img class="services" src="images/intro/service4.png" alt="service4">
+                    <div class="stext">
+                        <span>Сибирский чан</span>
+                        <div class="text2">Подробнее</div>
+                        <img src="images/intro/Arrow.svg" alt="Arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider -->
+
+    <div class="sim-slider">
+        <ul class="sim-slider-list">
+            <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+            <li class="sim-slider-element"><img src="images/slider/1.jpg" alt="0"></li>
+            <li class="sim-slider-element"><img src="images/slider/2.jpg" alt="1"></li>
+            <li class="sim-slider-element"><img src="images/slider/3.jpg" alt="2"></li>
+            <li class="sim-slider-element"><img src="images/slider/4.jpg" alt="3"></li>
+        </ul>
+        <div class="sim-slider-arrow-left"></div>
+        <div class="sim-slider-arrow-right"></div>
+        <div class="sim-slider-dots"></div>
+    </div>
+
+    <!--Блок контента 2-->
+    <div class="block2">
+        <div class="container">
+            <div class="b2elements">
+                <div class="before_reasons">
+                    <div class="num">6</div>
+
+                    <div class="reason">Причин, почему для отдыха на<br>
+                        Байкале нужно выбрать “Фрегат”
+                    </div>
+                </div>
+
+                <div class="reasons">
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason1.jpg" alt="reason1">
+
+                        <div class="card-text">
+                            <p class="card-title">
+
+                                <img src="images/block2/user.svg" alt="user">
+                                Размещение до 70 человек
+                            </p>
+                            <p class="inner-text">1 гостиничный комплекс с номерами категории “Стандарт” , JUNIOR SUIT и
+                                “Люкс”, а так же 4
+                                отдельных коттеджа.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason2.jpg" alt="reason2">
+                        <div class="card-text">
+                            <p class="card-title">
+                                <img src="images/block2/sun.svg" alt="sun">
+                                Отдых для всей семьи
+                            </p>
+                            <p class="inner-text">Большая игровая зона, беседки
+                                с мангальной зоной, детская и спортивная площадка.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason3.jpg" alt="reason3">
+                        <div class="card-text">
+                            <p class="card-title">
+                                <img src="images/block2/compass.svg" alt="compass">
+                                Территория более 6 гектар
+                            </p>
+                            <p class="inner-text">Закрытая территория боле 6 Га, cвоя береговая линия, два оборудованных
+                                пляжа,
+                                cпуск для водной техники, вертолетная площадка
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason4.jpg" alt="reason4">
+                        <div class="card-text">
+                            <p class="card-title">
+                                <img src="images/block2/wave.svg" alt="wave">
+                                Малое море (Байкал)
+                            </p>
+                            <p class="inner-text">Здесь редко идет дождь и бывает пасмурно. Это одно из немногих мест на
+                                планете,
+                                где практический все дни в году- солнечные.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason5.jpg" alt="reason5">
+                        <div class="card-text">
+                            <p class="card-title">
+                                <img src="images/block2/building.svg" alt="building">
+                                Ресторанный комплекс
+                            </p>
+                            <p class="inner-text">Ресторанный зал на 100 посадочных
+                                мест с панорамным видом на Байкал, закрытая веранда.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="reason-card">
+                        <img class="reasons-img" src="images/block2/reason6.jpg" alt="reason6">
+                        <div class="card-text">
+                            <p class="card-title">
+                                <img src="images/block2/umbrella.svg" alt="umbrella">
+                                Комплекс услуг
+                            </p>
+                            <p class="inner-text">Наша база отдых предлагает
+                                множество услуг: сауна на берегу, банный чан, прокат велосипедов, конференц-зал до 50
+                                человек
+                                и многое другое.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок контента 3 -->
+    <div class="block_3">
+        <div class="container">
+            <div class="b3elements">
+                <div class="block3_title">
+                    <p>Варианты размещения</p>
+                </div>
+
+                <div class="block3_btn">
+                    <a class="btn_link1" href="#">Гостиничный корпус</a>
+                    <a class="btn_link2" href="#">Коттеджи (Отдельные дома)</a>
+                </div>
+
+                <div class="block3_cards">
+                    <div class="hotell-card">
+                        <img class="hotell_img" src="images/block3/card1.jpg" alt="card1">
+                        <div class="b3card_text">
+                            <h2>Номер 1-категории - “Стандарт”</h2>
+                            <p>Двухместный однокомнатный номер с двумя односпальными кроватями
+                                (Можно сдвинуть /раздвинуть), две прикроватные ...
+                            </p>
+                        </div>
+                        <div class="chek-text">
+                            <div class="chek">
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Кондиционер
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Душевая кабина
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Телевизор
+                                </p>
+                            </div>
+                            <div class="description">
+                                <p>Кол-во. номеров: 9</p>
+                                <p>Цены за номер: от 3500р.</p>
+                            </div>
+                        </div>
+                        <div class="more_btn">
+                            <div class="card_btn ">
+                                <a class="more" href="#">Подробнее</a>
+                            </div>
+                            <div class="Available_rooms">
+                                <p><img src="images/block3/checkmark_green.svg" alt="checkmark_green">
+                                    в наличии
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotell-card">
+                        <img class="hotell_img" src="images/block3/card2.jpg" alt="card1">
+                        <div class="b3card_text">
+                            <h2>Номер 1-категории - “Стандарт”</h2>
+                            <p>Двухместный однокомнатный номер с двумя односпальными кроватями
+                                (Можно сдвинуть /раздвинуть), две прикроватные ...
+                            </p>
+                        </div>
+                        <div class="chek-text">
+                            <div class="chek">
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Кондиционер
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Душевая кабина
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Телевизор
+                                </p>
+                            </div>
+                            <div class="description">
+                                <p>Кол-во. номеров: 9</p>
+                                <p>Цены за номер: от 3500р.</p>
+                            </div>
+                        </div>
+                        <div class="more_btn">
+                            <div class="card_btn">
+                                <a class="more" href="#">Подробнее</a>
+                            </div>
+                            <div class="Available_rooms">
+                                <p><img src="images/block3/checkmark_green.svg" alt="checkmark_green">
+                                    в наличии
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotell-card">
+                        <img class="hotell_img" src="images/block3/card3.jpg" alt="card1">
+                        <div class="b3card_text">
+                            <h2>Номер 1-категории - “Стандарт”</h2>
+                            <p>Двухместный однокомнатный номер с двумя односпальными кроватями
+                                (Можно сдвинуть /раздвинуть), две прикроватные ...
+                            </p>
+                        </div>
+                        <div class="chek-text">
+                            <div class="chek">
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Кондиционер
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Душевая кабина
+                                </p>
+                                <p><img src="images/block3/checkmark.svg" alt="checkmark">
+                                    Телевизор
+                                </p>
+                            </div>
+                            <div class="description">
+                                <p>Кол-во. номеров: 9</p>
+                                <p>Цены за номер: от 3500р.</p>
+                            </div>
+                        </div>
+                        <div class="more_btn">
+                            <div class="card_btn">
+                                <a class="more" href="#">Подробнее</a>
+                            </div>
+                            <div class="Available_rooms">
+                                <p><img src="images/block3/checkmark_green.svg" alt="checkmark_green">
+                                    в наличии
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block3_slider sliderb">
+                    <div class="slider_item1">01</div>
+                    <img class="lineb3" src="images/block3/Line 1 (1).svg" alt="Line">
+                    <div class="slider_item">03</div>
+                    <div class="slider_item">
+                        <img src="images/block3/Arrow_left.svg" alt="Arrow_left">
+                    </div>
+                    <div class="slider_item">
+                        <img src="images/block3/Arrow_right.svg" alt="Arrow_right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Блок контента 4 -->
+    <div class="block4">
+        <div class="container">
+            <div class="elements">
+                <div class="b4slider">
+                    <p><img src="images/block4/num1.svg" alt="num1">
+                        Размещение
+                        <img src="images/block4/line.svg" alt="line">
+                        <img src="images/block4/num2.svg" alt="num2">
+                        Бронирование
+                        <img src="images/block4/line.svg" alt="line">
+                        <img src="images/block4/num3.svg" alt="num3">
+                        Оплата
+                    </p>
+
+                </div>
+                <div class="www">
+                    <form class="form" action="#">
+                        <div class="form-grid">
+                            <p class="form_title">Забронировать номер</p>
+                            <div class="elem-group-datein">
+                                <label class="datein-label" for="date">Дата заезда</label>
+                                <input class="datein-input" type="date" name="datein" />
+                            </div>
+
+                            <div class="elem-group-dateout">
+                                <label class="dateout-label" for="dateout">Дата отъезда</label>
+                                <input class="dateout-input" type="date" name="dateout" />
+                            </div>
+
+                            <div class="elem-group-name">
+                                <label class="name-label" for="name">Имя</label>
+                                <input class="name-input" type="text" placeholder="Введите ваше имя">
+                            </div>
+
+                            <div class="elem-group-typehouse">
+                                <label class="typeofhouse-label" for="typeofhouse"> Вид жилья</label>
+                                <select class="typeofhouse-select" name="typeofhouse">
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Гостиничный
+                                        корпус</option>
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Гостиничный
+                                        корпус</option>
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Гостиничный
+                                        корпус</option>
+                                </select>
+                            </div>
+
+                            <div class="elem-group-phone">
+                                <label class="phohe-label" for="phohe">Телефон</label>
+                                <input class="phohe-input" type="tel" placeholder="Введите номер телефона">
+                            </div>
+
+                            <div class="elem-group-room">
+                                <label class="room-label" for="view"> Вид номера</label>
+                                <select class="room-select" name="view">
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Номер
+                                        1-Категории “Стандарт”</option>
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Номер
+                                        1-Категории “Стандарт”</option>
+                                    <option value="hotell"> <img src="/images/block4/house.svg" alt="house"> Номер
+                                        1-Категории “Стандарт”</option>
+                                </select>
+                            </div>
+
+                            <div class="elem-group-people">
+                                <label class="people-label" for="people"> Количество человек</label>
+                                <input class="people-input" type="number" placeholder="Введите количество отдыхающих">
+                            </div>
+
+                            <div class="elem-group-comments">
+                                <label class="comments-label" for="com">Комментарии</label>
+                                <textarea class="comments-area" name="comm"
+                                    placeholder="Введите ваш комментарий"></textarea>
+                            </div>
+
+                            <button class="button-submit" type="submit">Забронировать номер</button>
+
+                    </form>
+                    <img class="b3_image" src="images/block4/b3_image.jpg" alt="b3_image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок 5 -->
+    <div class="block5">
+        <div class="container">
+            <div class="uslugi">
+                <div class="uslugi-title">Услуги и развлечения</div>
+
+                <div class="uslugi-cards">
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card1.jpg" alt="card1">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Сибирский чан</h2>
+                            <div class="uslugi-inner-text">
+                                Новинка в мире парения! Эта процедура замешана на чудодейственной силе огня
+                                и чистейшей байкальской воды в сочетании с сибирскими травами и эфирными ...
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 2000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card2.jpg" alt="card2">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Мангал на природе</h2>
+                            <div class="uslugi-inner-text">
+                                Приготовьте шашлык и насладитесь вкусной едой на открытом воздухе.
+                                На территории нашей базы расположена отличная беседка с большим столом ...
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 1000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card3.jpg" alt="card3">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Прокат велосипедов</h2>
+                            <div class="uslugi-inner-text">
+                                Для семейного отдыха и приятного времяпрепровождения мы предоставляем
+                                прокат качественных прогулочных велосипедов ...
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 500 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card4.jpg" alt="card4">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Сауна</h2>
+                            <div class="uslugi-inner-text">
+                                В любое время года и при любой погоде,
+                                что может быть лучше настоящей сауны?
+                                Наша сауна — настоящая находка для ценителей и любителей парной.
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 4000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card5.jpg" alt="card5">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Рыбалка</h2>
+                            <div class="uslugi-inner-text">
+                                Традиционное русское увеселительное мероприятие, подарит огромное наслаждение и взрослым
+                                и детям!
+                                Рыбалка в районе мыса Мухор ...
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 2000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card6.jpg" alt="card6">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Конференц-зал</h2>
+                            <div class="uslugi-inner-text">
+                                Если вы хотите совместить отдых и плодотворную работу
+                                с коллегами, произвести положительное впечатление на партнеров ....
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 1000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card7.jpg" alt="card7">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Ресторан “Фрегат”</h2>
+                            <div class="uslugi-inner-text">
+                                У гостей есть возможность оценить разнообразные блюда национальной русской кухни и
+                                выпить свежесваренного
+                                эспрессо или капучино.
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 5000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="usluga-card">
+                        <img class="card-img" src="images/block5/card8.jpg" alt="card8">
+                        <div class="usluga-text">
+                            <h2 class="uslugi-card-title">Новый год 2022</h2>
+                            <div class="uslugi-inner-text">
+                                Банкетное меню Новогодняя ночь 2022 г. на одного человека:
+                                Закуски
+                                Мясная тарелка 75/25 гр.
+                                Ростбиф, балык (не жирная свинина), сервелат ...
+                            </div>
+                            <div class="usluga-cost">
+                                <img src="images/block5/line.svg" alt="line">
+                                от 2000 рублей в час
+                            </div>
+                            <a class="uslugi-link" href="#">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLOCK 6 -->
+    <div class="galery">
+        <div class="container">
+
+            <div class="b6-title">
+                <span id='dynamic-text'>Фотографии местности <br> и базы отдыха</span>
+            </div>
+            <div class="galeryy">
+                <div class="grid-block">
+                    <div class="grid1">
+                        <img class="pic1" src="images/block6/pic1.jpg" alt="pic1" onclick="changeSizeImage(this)">
+                        <img class="pic2" src="images/block6/pic2.jpg" alt="pic2">
+                        <img class="pic3" src="images/block6/pic3.jpg" alt="pic3">
+                        <img class="pic4" src="images/block6/pic4.jpg" alt="pic4">
+                    </div>
+
+                    <div class="grid2">
+                        <img class="pic5" src="images/block6/pic5.jpg" alt="pic5">
+                        <img class="pic6" src="images/block6/pic6.jpg" alt="pic6">
+                        <img class="pic7" src="images/block6/pic7.jpg" alt="pic7">
+                        <img class="pic8" src="images/block6/pic8.jpg" alt="pic8">
+                    </div>
+
+                </div>
+                <div class="galery-btn">
+                    <a class="g-btn" href="#">Посмотреть фотогалерею</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- block7 -->
+    <div class="block7">
+        <div class="container">
+            <div class="reviews">
+                <img class="b7svg" src="images/block7/map.svg" alt="b7svg">
+                <div class="reviews-title" id="wave">Отзывы о базе отдыха “Фрегат”</div>
+
+                <div class="review-block">
+                    <div class="review">
+                        <img class="quotes1" src="images/block7/quotes.svg" alt="quotes">
+
+                        <div class="review-text1">
+                            <a href="#"><img class="inst1" src="images/block7/inst.svg" alt="inst"></a>
+
+                            "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно:
+                            радушный приём, отличное питание, уютное пребывание и благоустроенный пляж.
+                            Рекомендую всем для семейного отдыха"
+
+                        </div>
+
+                        <img class="quotes2" src="images/block7/quotes.svg" alt="quotes">
+
+                        <div class="review-text2">
+                            <a href="#"> <img class="inst2" src="images/block7/inst.svg" alt="inst"></a>
+                            "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно:
+                            радушный приём, отличное питание, уютное пребывание и благоустроенный пляж.
+                            Рекомендую всем для семейного отдыха"
+                        </div>
+
+                        <img class="quotes3" src="images/block7/quotes.svg" alt="quotes">
+
+                        <div class="review-text3">
+                            <a href="#"><img class="inst3" src="images/block7/inst.svg" alt="inst"></a>
+                            "Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно:
+                            радушный приём, отличное питание, уютное пребывание и благоустроенный пляж.
+                            Рекомендую всем для семейного отдыха"
+                        </div>
+
+                    </div>
+
+                    <div class="users">
+                        <img class="user1" src="images/block7/image 26.png" alt="user1">
+                        <div class="user1-name">
+                            Анастасия Ли
+                        </div>
+                        <div class="date1-review">
+                            02.10.2021
+                        </div>
+
+                        <img class="user-svg" src="images/block7/user.svg" alt="user1">
+                        <div class="user2-name">
+                            Артём Сазонов
+                        </div>
+                        <div class="date2-review">
+                            02.10.2021
+                        </div>
+
+                        <img class="user3" src="images/block7/image 27.png" alt="user1">
+                        <div class="user3-name">
+                            Александр Ким
+                        </div>
+                        <div class="date3-review">
+                            02.10.2021
+                        </div>
+                    </div>
+                </div>
+                <div class="block3_slider b7">
+                    <div class="slider_item1">01</div>
+                    <img class="lineb3" src="images/block3/Line 1 (1).svg" alt="Line">
+                    <div class="slider_item">03</div>
+                    <div class="slider_item">
+                        <img src="images/block3/Arrow_left.svg" alt="Arrow_left">
+                    </div>
+                    <div class="slider_item">
+                        <img src="images/block3/Arrow_right.svg" alt="Arrow_right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BLOCK 8 -->
+    <div class="block8">
+        <div class="container">
+            <div class="mapp">
+                <div class="map-title">
+                    Кешбэк по карте Мир
+                </div>
+                <div class="cardholder">
+                    <div class="persent">20%</div>
+                    <img class="cardholder" src="images/block8/cardholder.png" alt="cardholder">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- block9 -->
+    <div class="block9">
+        <div class="container">
+            <div class="map-block">
+                <div class="mappp">
+                    <a class="link-map" href="#">Схема проезда</a>
+                    <a class="link-map" href="#">Карта базы</a>
+                    <a class="link-map" href="#">Карта офиса</a>
+                </div>
+
+                <div class="contacts">
+                    <img class="b9-map" src="images/block9/b9-map.jpg" alt="b9-map">
+
+                    <div class="contacts-title">Наши конакты</div>
+                    <img class="phoneeee" src="images/block9/phone.svg" alt="phone">
+
+                    <div class="contacts-phone">
+                        <div class="contacts-phone-inner-text">Звоните по телефонам:</div>
+                        <div class="phones">
+                            <div class="item1">+7 (3952) 56-00-26</div>
+                            <div class="item2">+7 (3952) 56-00-26</div>
+                            <div class="item3">+7 (3952) 56-00-26</div>
+                        </div>
+                    </div>
+
+                    <img class="email-img" src="images/block9/email.svg" alt="email">
+                    <div class="email">
+
+                        <div class="contacts-email-inner-text">
+                            Электронная почта:
+                        </div>
+                        <div class="emaill">952655@ramblerR</div>
+                    </div>
+
+                    <img class="mappp" src="images/block9/mappp.svg" alt="mappp">
+                    <div class="ofice-adres">
+                        <div class="contacts-adres-inner-text">
+                            Адрес офиса
+                        </div>
+                        <div class="adres">г. Иркутск, ул. Волжская, 51а, 1 этаж</div>
+                    </div>
+
+                    <img class="compass" src="images/block9/compass.svg" alt="compass">
+                    <div class="base-adres">
+
+                        <div class="contacts-base-adres-inner-text">
+                            Адрес базы отдыха
+                        </div>
+                        <div class="base">Ольхонский район, Куркутский залив, мыс Бурлог</div>
+                    </div>
+
+                    <div class="contacts-title2">Остались вопросы?</div>
+
+                    <div class="call-us">
+                        <div class="b7call">
+                            Напишите нам в
+                            <img class="wu" src="images/block9/WU.svg" alt="wu">
+                            WhatsApp
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+
+            <form>
+                <input style="margin: 0 23%;" type="button" value="Открыть карту" onClick="confirmClose()">
+            </form>
+
+            <div class="footer-grid">
+                <div class="grid-group1">
+                    <a class="grid-item item1" href="#">Главная</a>
+                    <a class="grid-item item2" href="#"> Номера и цены</a>
+                    <a class="grid-item item3" href="#">Услуги и развлечения</a>
+                </div>
+
+                <div class="grid-group2">
+                    <a class="grid-item item4" href="#">О нас</a>
+                    <a class="grid-item item5" href="#">Памятка туриста</a>
+                    <a class="grid-item item6" href="#"> Схема проезда</a>
+                </div>
+
+                <div class="grid-group3">
+                    <a class="grid-item item7" href="#">Отзывы</a>
+                    <a class="grid-item item8" href="#">Контакты</a>
+                </div>
+
+                <div class="grid-group4">
+                    <a class="grid-item item9" href="#">Получить консультацию</a>
+                </div>
+
+                <div class="grid-group5">
+                    <div class="grid-item item10">
+                        +7 (3952) 56-00-26
+                    </div>
+                    <div class="grid-item item11">
+                        Режим работы с 10:00 до 22:00
+                    </div>
+
+                    <a class="grid-item12" href="#"><img src="images/footer/viber.svg" alt="viber"></a>
+                    <a class="grid-item12" href="#"><img src="images/footer/inst.svg" alt="inst"></a>
+                    <a class="grid-item12" href="#"><img src="images/footer/whatsapp.svg" alt="whatsapp"></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="JS/click-btn.js"></script>
+<script src="JS/menu.js"></script>
+<script src="JS/top-btn.js"></script>
+<script src="JS/text.js"></script>
+<script src="JS/link-img.js"></script>
+<script src="JS/virus.js"></script>
+<script src="JS/slider.js"></script>
+
+</html>
