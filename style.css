@@ -1,0 +1,1315 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/gilroy-regular.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/gilroy-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/gilroy-regular.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/gilroy-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/gilroy-regular.svg#gilroy-regular') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Gilroy-RegularItalic';
+    src: url('../fonts/gilroy-regularitalic.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/gilroy-regularitalic.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/gilroy-regularitalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/gilroy-regularitalic.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/gilroy-regularitalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/gilroy-regularitalic.svg#gilroy-regularitalic') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Book Antiqua';
+    src: url('../fonts/book_antiqua.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/book_antiqua.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/book_antiqua.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/book_antiqua.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/book_antiqua.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/book_antiqua.svg#book_antiqua') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('MullerUltraLight.eot');
+    src: local('Muller UltraLight'), local('MullerUltraLight'),
+        url('MullerUltraLight.eot?#iefix') format('embedded-opentype'),
+        url('MullerUltraLight.woff2') format('woff2'),
+        url('MullerUltraLight.woff') format('woff'),
+        url('MullerUltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: 'Gilroy-Regular';
+    line-height: 1.6;
+    color: #fff;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* container */
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*******************************************/
+li img{
+    width: 100%; 
+  }
+  
+  .sim-slider {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 20px auto;
+    padding: 30px 50px;
+    border: 1px solid #ccd;
+    background-color: white;
+  }
+  
+  /* General styles */
+  .sim-slider {
+    position: relative;
+  }
+  
+  .sim-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  
+  /* Navigation item styles */
+  div.sim-slider-arrow-left,
+  div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+  }
+  
+  div.sim-slider-arrow-left {
+    left: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-right {
+    right: 10px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+  
+  div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+  }
+  
+  div.sim-slider-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  span.sim-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/************top-btn********/
+#top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+/************************Боковое меню****************/
+#sidebar{
+    font-family: 'Gilroy-Regular';
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: #32889e;
+    border-right: 4px solid black;
+    left: -254px;
+
+    transition: all .3s;
+}
+
+#sidebar.active{
+    left: 0px;
+}
+
+#sidebar ul li:first-child{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 15px 10px;
+}
+
+#sidebar ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#sidebar ul li:not(:first-child){
+    width: 90%;
+    margin-left: 10%;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    list-style: none;
+    padding: 25px 10px;
+}
+
+#sidebar ul li:hover{
+    color: #2b276c;
+}
+
+#sidebar .toogle-btn{
+    position: absolute;
+    left: 270px;
+    top: 20px;
+    background: #e0e5ea;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+
+#sidebar .toogle-btn:hover{background: #556270;}
+#sidebar .toogle-btn:hover span{background: #fafafa;}
+
+#sidebar .toogle-btn span{
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #666;
+    margin: 4px 0;
+}
+
+/******************* ШАПКА *************************/
+
+.header {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.header_logo {
+    text-transform: uppercase;
+    font-size: 34px;
+    font-weight: 700;
+
+    margin: 0 5%;
+}
+
+/********************** НАВИГАЦИЯ**************************** */
+.nav_link {
+    color: #fff;
+
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+
+    transition: color .2s linear;
+}
+
+.nav_link:hover {
+    color: #6aafef;
+}
+
+.call {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 5px;
+
+    transition: color .2s linear;
+}
+
+.call:hover {
+    color: #6aafef;
+}
+
+.phoness {
+    display: flex;
+    justify-content: space-around;
+
+    transition: color .2s linear;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__element {
+    margin-right: 30px;
+}
+
+/*****************************  intro ***************************/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/intro/intro_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.intro_title {
+    font-family: 'Book Antiqua';
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 1;
+}
+
+.suptitle {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.slider_text {
+    max-width: 25%;
+    height: 150px;
+    border-left: 3px solid #fff;
+    padding-left: 1%;
+}
+
+.titlee {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.suptitlee {
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.sliderr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.person {
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.btn input{
+    text-transform: uppercase;
+    background-color: #1566b3;
+    text-decoration: none;
+    color: #fff;
+    padding: 22px 70px;
+    font-weight: 600;
+}
+
+.btn {
+    margin: 5% 3.5% 0 0;
+}
+
+.niz {
+    margin-top: -6.7%;
+}
+
+.dark {
+    background: rgba(0, 0, 0, 0.54);
+    display: flex;
+    justify-content: space-around;
+}
+
+.service1,.service2,.service3,.service4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stext {
+    margin-left: 10%;
+}
+/************************** BLOCK 2*******************************/
+.b2elements {
+    margin: 0 20px;
+}
+
+.num {
+    color: #4C65AD;
+    font-family: 'Book Antiqua';
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.reason {
+    color: #4C65AD;
+    font-family: 'Book Antiqua';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 72px;
+    text-align: justify;
+    margin-left: 16px;
+}
+
+.before_reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 201px 0 145px 0;
+}
+
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+
+.reasons {
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reason-card {
+    display: flex;
+    justify-content: space-around;
+    max-width: 45%;
+    margin-bottom: 46px;
+}
+
+.card-title {
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    color: #151515;
+    max-width: 500px;
+}
+
+.inner-text {
+    color: #515151;
+    font-size: 25px;
+    line-height: 27px;
+    margin: 0 0 34px;
+    text-align: justify;
+}
+
+.card-text {
+    margin: 0 102px 0 44px;
+}
+
+.reasons-img {
+    width: 185px;
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+/******************************** BLOCK 3 ******************************/
+
+.b3elements {
+    margin: 0 85px;
+}
+
+.block3_title {
+    font-family: 'Book Antiqua';
+    font-size: 65px;
+    line-height: 72px;
+    color: #4C65AD;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hotell_img {
+    display: block;
+    margin: auto;
+    max-width: 75%;
+}
+
+.block3_btn {
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.btn_link1 {
+    color: #FFFFFF;
+    background-color: #4C65AD;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 15px 54px;
+}
+
+.btn_link2 {
+    color: #515151;
+    font-size: 25px;
+    line-height: 28px;
+    padding: 15px 54px;
+    border: 1px solid #4C65AD;
+}
+
+.hotell-card {
+    background-color: #fff;
+    max-width: 30%;
+    color: #121212;
+    padding: 15px 0;
+    box-shadow: 0 0 20px rgb(101, 125, 206);
+}
+
+.b3card_text h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.b3card_text p,.chek .description {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.b3card_text {
+    text-align: justify;
+    margin: 0 55px;
+}
+
+.chek-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 55px;
+}
+
+.description {
+    padding-left: 25xp;
+    border-left: 1px solid#DFE1E4;
+    margin-left: 24px;
+    padding-left: 25px;
+}
+
+.card_btn a{
+    border: 2px solid #3862DE;
+    color: #4C65AD;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.more_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Available_rooms {
+    color: #01C839;
+    text-transform: uppercase;
+    margin-left: 34px;
+}
+
+.block3_cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.block3_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.lineb3{
+    margin: 0 20px;
+}
+
+.slider_item{
+    margin: 0 70px 0 0;
+}
+
+.slider_item, .slider_item1 {
+    color: #121212;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'Muller';
+}
+.sliderb{
+    margin: 30px;
+}
+
+/****************************** блок 4 ********************************/
+.block4 {
+    background-color: rgb(251, 247, 238);
+}
+
+.elements {
+    margin: 0 172px 200px;
+    max-width: 1952px;
+
+}
+
+.b4slider {
+    color: #505050;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-top: 92px;
+}
+
+.b4slider p {
+    margin: 0;
+}
+
+
+/************************************* FORM ********************/
+.form_title {
+    font-size: 65px;
+    line-height: 72px;
+    font-family: 'Book Antiqua';
+    color: #121212;
+    margin: 90px 0 50px;
+}
+
+.www {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    color: #121212;
+    font-size: 25px;
+    line-height: 25px;
+    font-family: 'Muller';
+    max-width: 1550px;
+}
+
+.b3_image {
+    object-fit: cover;
+    width: 200%;
+
+    grid-column: 4/5;
+    grid-row: 1/7;
+}
+
+.form p {
+    margin: 0;
+}
+
+.label,
+.input {
+    display: block;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 18.6%));
+    align-items: stretch;
+    gap: 40px;
+}
+
+.cardform {
+    max-width: 1370px;
+}
+
+.form_title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.elem-group-datein {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.elem-group-dateout {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.elem-group-name {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+input {
+    min-width: 18.6%;
+    padding: 23px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Muller';
+}
+
+select {
+    min-width: 100%;
+    padding: 23px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Muller';
+}
+
+textarea {
+    min-width: 18.6%;
+    padding: 23px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Muller';
+}
+
+.elem-group-typehouse {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.elem-group-phone {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.elem-group-room {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.elem-group-people {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.people-input {
+    min-width: 90%;
+    padding: 23px;
+
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Muller';
+}
+
+.elem-group-comments {
+    grid-column: 3/4;
+    grid-row: 4/6;
+}
+
+.button-submit {
+    color: #fff;
+    background: #1566B3;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.5px;
+
+    padding: 20px;
+
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.elem-group-img {
+    grid-column: 4/5;
+    grid-row: 1/7;
+}
+
+.elem-group-btn {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.www {
+    display: flex;
+}
+
+/******************************** BLOCK 5 *******************************/
+.uslugi {
+    max-width: 1520px;
+    margin: 0 40px;
+}
+
+.uslugi-title {
+    font-family: 'Book Antiqua';
+    line-height: 72px;
+    font-size: 65px;
+    color: #4C65AD;
+    text-align: center;
+    margin: 200px 0 88px;
+}
+
+.uslugi-card-title {
+    color: #121212;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42.46px;
+}
+
+.uslugi-inner-text {
+    font-size: 18px;
+    line-height: 19.8px;
+    color: #515151;
+}
+
+.uslugi-link {
+    text-transform: uppercase;
+    color: #4C65AD;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.98px;
+    padding: 20px 62px;
+    border: 1px solid #1566B3;
+}
+
+.uslugi-inner-text {
+    max-width: 370px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.usluga-cost {
+    font-family: 'Gilroy-RegularItalic';
+    font-size: 18px;
+    line-height: 19.8px;
+    font-weight: 500;
+    color: #515151;
+
+    margin-bottom: 28px;
+}
+
+.usluga-text {
+    margin-left: 30px;
+}
+
+.usluga-card {
+    display: flex;
+}
+
+.uslugi-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block5 {
+    margin-bottom: 200px;
+}
+
+/************************** BLOCK 6 **************************************/
+.b6-title {
+    font-size: 65px;
+    line-height: 72px;
+    text-align: center;
+    color: #4C65AD;
+    font-family: 'Book Antiqua';
+    margin-bottom: 80px;
+}
+
+.grid-block {
+    margin: 0 200px;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 100%));
+    align-items: stretch;
+    gap: 42px;
+    margin-bottom: 42px;
+   
+}
+
+.pic1 {
+    grid-column: 1/2;
+    grid-row: span 2;
+}
+
+.pic2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.pic1,.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8 {
+    border-radius: 15px;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 0 20px rgb(101, 125, 206);
+}
+
+.pic3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.pic4 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.grid2 {
+    display: grid;
+    align-items: stretch;
+    gap: 42px;
+
+    margin-bottom: 80px;
+}
+
+.pic5 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.pic6 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.pic7 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.pic8 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.galery-btn {
+    text-align: center;
+    margin-bottom: 219px;
+}
+
+.g-btn {
+    text-transform: uppercase;
+    color: #4C65AD;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.15px;
+    border: 1px solid #4C65AD;
+    padding: 19px 30px;
+}
+
+/************************* block 7 **************************************/
+
+.block7{
+    position: relative;
+}
+.b7svg{
+    position: absolute;
+    bottom: -10%;
+    right: 25%;
+    opacity: 0.5;
+    z-index: -100;
+}
+
+.reviews-title {
+    font-size: 65px;
+    line-height: 72px;
+    font-family: 'Book Antiqua';
+    color: #4C65AD;
+    text-align: center;
+    margin-bottom: 103px;
+}
+
+.review {
+    display: grid;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-bottom: 56px;
+}
+
+.review-text1, .review-text2, .review-text3 {
+    color: #515151;
+    font-size: 25px;
+    line-height: 32.5px;
+    max-width: 349px;
+    padding: 30px 15px;
+    text-align: justify;
+
+}
+
+.user1-name, .user2-name, .user3-name {
+    font-size: 25px;
+    color: #211212;
+    line-height: 30px;
+}
+
+.date1-review, .date2-review, .date3-review {
+    color: #959699;
+    font-size: 18.19px;
+    line-height: 31.18px;
+    font-family: 'Muller';
+}
+
+.user1, .user3 {
+    border-radius: 50%;
+    max-width: 102px;
+    max-height: 102px;
+}
+
+.user-svg {
+    background: #3A76E5;
+    padding: 27px;
+    border-radius: 50%;
+}
+
+/*****************users-block*****************************/
+.users {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60px, 140px));
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.user1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.user1-name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.date1-review {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.user-svg {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.user2-name {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.date2-review {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.user3 {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.user3-name {
+    grid-column: 6/7;
+    grid-row: 1/2;
+}
+
+.date3-review {
+    grid-column: 6/7;
+    grid-row:  2/3;
+}
+
+/******************** text-block*****************************/
+.quotes1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.quotes2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.quotes3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.inst1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    float: right;
+}
+
+.inst2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: auto
+}
+
+.inst3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-left: auto
+}
+
+.review-text1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.review-text2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.review-text3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+/********************block8********************************/
+.map-title{
+    font-size: 65px;
+    line-height: 72px;
+    font-family: 'Book Antiqua';
+    color: #4C65AD;
+    text-align: center;
+}
+
+.mapp{
+    background-image: url(../images/block8/World\ map.jpg);
+    background-repeat: no-repeat;
+    margin: 200px 0;
+}
+
+.cardholder{
+    display: flex;
+    justify-content: center;
+}
+
+.persent{
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 192.66px;
+
+    background: linear-gradient(#1577E4, #00D483);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*******************block9*********************/
+.link-map{
+    font-size: 25px;
+    line-height: 30.63px;
+    color: #4C65AD;
+}
+
+.map-block{
+    margin: 0 120px;
+}
+
+.link-map{
+    margin-right: 50px;
+}
+.contacts-title, .contacts-title2{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 42.46px;
+    color: #121212;
+}
+
+.call-us{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #121212;
+}
+
+.b9-map{
+    max-width: 100%;
+}
+
+
+.contacts{
+    display: grid;
+    align-items: center;
+    gap: 25px;
+}
+
+.contacts-phone-inner-text, .contacts-email-inner-text,
+.contacts-adres-inner-text, .contacts-base-adres-inner-text{
+    color: #959699;
+    font-size: 25px;
+    line-height: 27.5px;
+}
+
+.phones, .emaill, .adres, .base{
+    color: #121212;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.5px;
+}
+
+.b9-map{
+    grid-column: 1/2;
+    grid-row: 1/9;
+}
+
+.phoneeee{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.contacts-phone{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.email-img{
+    grid-column: 2/3; 
+    grid-row: 3/4;
+}
+
+.email{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.mappp{
+    grid-column: 2/3; 
+    grid-row: 4/5;
+}
+
+.ofice-adres{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.compass{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.base-adres{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+.contacts-title2{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+
+.contacts-title{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.call-us{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+
+/*************footer****************/
+.footer-grid{
+    background: #1566B3;
+    color: #FFFFFF;
+}
+
+.footer-grid{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-item{
+    display: block;
+}
+
+.grid-group1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.grid-group2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.grid-group3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.grid-group4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.grid-group5{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.item9{
+    border: 1px solid #FFFFFF;
+    padding: 5px 10px;
+}
