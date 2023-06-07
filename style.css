@@ -187,6 +187,7 @@ li img{
     background: #32889e;
     border-right: 4px solid black;
     left: -254px;
+    z-index: 1000;
 
     transition: all .3s;
 }
