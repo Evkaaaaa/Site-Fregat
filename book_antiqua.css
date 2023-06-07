@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'Book Antiqua';
-	src: url('../fonts/book_antiqua.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/book_antiqua.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/book_antiqua.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/book_antiqua.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/book_antiqua.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/book_antiqua.svg#book_antiqua') format('svg'); /* Chrome < 4, Legacy iOS */
-}
